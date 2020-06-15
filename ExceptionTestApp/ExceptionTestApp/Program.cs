@@ -17,7 +17,7 @@ namespace ExceptionTestApp
             {
                 value = x / y;
                 Console.WriteLine($"{x} / {y} = {value}");
-                throw new Exception("사용자 에러");
+                throw new Exception("사용자 에러");//
             }
             catch (DivideByZeroException ex)
             {
