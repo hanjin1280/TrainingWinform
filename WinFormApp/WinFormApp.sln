@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClockApp", "WinFormApp1\Clo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonTestApp", "ButtonTestApp\ButtonTestApp.csproj", "{71AB206A-4DF4-4F70-B41F-8638FA576C3C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckBoxTestApp", "CheckBoxTestApp\CheckBoxTestApp.csproj", "{D5A9DCD0-B7E2-4D6C-BDBA-8A77DD4AD5E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{71AB206A-4DF4-4F70-B41F-8638FA576C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71AB206A-4DF4-4F70-B41F-8638FA576C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71AB206A-4DF4-4F70-B41F-8638FA576C3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5A9DCD0-B7E2-4D6C-BDBA-8A77DD4AD5E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5A9DCD0-B7E2-4D6C-BDBA-8A77DD4AD5E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5A9DCD0-B7E2-4D6C-BDBA-8A77DD4AD5E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5A9DCD0-B7E2-4D6C-BDBA-8A77DD4AD5E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
