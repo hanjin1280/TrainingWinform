@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModalDlgApp", "ModalDlgApp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenFileDlgApp", "OpenFileDlgApp\OpenFileDlgApp.csproj", "{DC2DC861-F8C8-4192-B0A0-0D355CA0172C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainMenuApp", "MainMenuApp\MainMenuApp.csproj", "{9EAD6944-FDC5-4D18-96A3-6A5338C2B53D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{DC2DC861-F8C8-4192-B0A0-0D355CA0172C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC2DC861-F8C8-4192-B0A0-0D355CA0172C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC2DC861-F8C8-4192-B0A0-0D355CA0172C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EAD6944-FDC5-4D18-96A3-6A5338C2B53D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EAD6944-FDC5-4D18-96A3-6A5338C2B53D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EAD6944-FDC5-4D18-96A3-6A5338C2B53D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EAD6944-FDC5-4D18-96A3-6A5338C2B53D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
