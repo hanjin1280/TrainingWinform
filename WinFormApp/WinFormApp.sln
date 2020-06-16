@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListControlTestApp", "ListC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckListBox_App", "CheckListBox_App\CheckListBox_App.csproj", "{A41DAC58-1FA5-4A1C-BB84-42326811540A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModalDlgApp", "ModalDlgApp\ModalDlgApp.csproj", "{653113A7-34C8-4D94-AD8C-6B23BBEDEE14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenFileDlgApp", "OpenFileDlgApp\OpenFileDlgApp.csproj", "{DC2DC861-F8C8-4192-B0A0-0D355CA0172C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{A41DAC58-1FA5-4A1C-BB84-42326811540A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A41DAC58-1FA5-4A1C-BB84-42326811540A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A41DAC58-1FA5-4A1C-BB84-42326811540A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{653113A7-34C8-4D94-AD8C-6B23BBEDEE14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{653113A7-34C8-4D94-AD8C-6B23BBEDEE14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{653113A7-34C8-4D94-AD8C-6B23BBEDEE14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{653113A7-34C8-4D94-AD8C-6B23BBEDEE14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC2DC861-F8C8-4192-B0A0-0D355CA0172C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC2DC861-F8C8-4192-B0A0-0D355CA0172C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC2DC861-F8C8-4192-B0A0-0D355CA0172C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC2DC861-F8C8-4192-B0A0-0D355CA0172C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
