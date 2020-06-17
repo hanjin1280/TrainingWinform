@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressApp", "ProgressApp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimationApp", "AnimationApp\AnimationApp.csproj", "{DFB00E6E-330E-4117-B546-4A0EEB46488A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphicApp", "GraphicApp\GraphicApp.csproj", "{588A64D6-1536-43EE-A389-D34A01E600A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{DFB00E6E-330E-4117-B546-4A0EEB46488A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFB00E6E-330E-4117-B546-4A0EEB46488A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFB00E6E-330E-4117-B546-4A0EEB46488A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{588A64D6-1536-43EE-A389-D34A01E600A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{588A64D6-1536-43EE-A389-D34A01E600A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{588A64D6-1536-43EE-A389-D34A01E600A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{588A64D6-1536-43EE-A389-D34A01E600A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
