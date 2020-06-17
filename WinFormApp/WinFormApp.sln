@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainMenuApp", "MainMenuApp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewControlApp", "ViewControlApp\ViewControlApp.csproj", "{672C9253-A26C-4EB0-AC70-FADD826EE4EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeViewApp", "TreeViewApp\TreeViewApp.csproj", "{569E0DD3-C85B-4928-820E-810EE4CAF928}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{672C9253-A26C-4EB0-AC70-FADD826EE4EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{672C9253-A26C-4EB0-AC70-FADD826EE4EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{672C9253-A26C-4EB0-AC70-FADD826EE4EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{569E0DD3-C85B-4928-820E-810EE4CAF928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{569E0DD3-C85B-4928-820E-810EE4CAF928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{569E0DD3-C85B-4928-820E-810EE4CAF928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{569E0DD3-C85B-4928-820E-810EE4CAF928}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
