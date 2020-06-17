@@ -44,10 +44,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.label1 = new System.Windows.Forms.Label();
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
             // comboBox1
@@ -80,20 +81,11 @@
             this.listView1.Location = new System.Drawing.Point(12, 54);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(608, 380);
-            this.listView1.SmallImageList = this.imageList1;
+            this.listView1.SmallImageList = this.imageList2;
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "korea.png");
-            this.imageList1.Images.SetKeyName(1, "USA.png");
-            this.imageList1.Images.SetKeyName(2, "italy.png");
-            this.imageList1.Images.SetKeyName(3, "france.png");
             // 
             // columnHeader1
             // 
@@ -105,6 +97,15 @@
             this.columnHeader2.Text = "국가번호";
             this.columnHeader2.Width = 300;
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "korea.png");
+            this.imageList1.Images.SetKeyName(1, "USA.png");
+            this.imageList1.Images.SetKeyName(2, "italy.png");
+            this.imageList1.Images.SetKeyName(3, "france.png");
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -113,6 +114,15 @@
             this.label1.Size = new System.Drawing.Size(45, 15);
             this.label1.TabIndex = 2;
             this.label1.Text = "label1";
+            // 
+            // imageList2
+            // 
+            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList2.Images.SetKeyName(0, "korea.png");
+            this.imageList2.Images.SetKeyName(1, "USA.png");
+            this.imageList2.Images.SetKeyName(2, "italy.png");
+            this.imageList2.Images.SetKeyName(3, "france.png");
             // 
             // Form1
             // 
@@ -137,6 +147,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ImageList imageList2;
     }
 }
 
