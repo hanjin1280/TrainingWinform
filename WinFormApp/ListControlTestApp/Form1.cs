@@ -43,5 +43,13 @@ namespace ListControlTestApp
         {
             label2.Text = comboBox1.SelectedItem.ToString();
         }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == 13) // 10 :  Line Feed => 다음 줄로 // 13 : Cariage Return => 제일 처음 칸으로
+            {
+                button1_Click(sender, new EventArgs());
+            }
+        }
     }
 }

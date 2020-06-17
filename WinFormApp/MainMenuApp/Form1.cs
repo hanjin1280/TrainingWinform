@@ -20,6 +20,7 @@ namespace MainMenuApp
         private void MnuNewFile_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + MnuNewFile.Text + Environment.NewLine;
+            toolStripStatusLabel1.Text = MnuNewFile.Text;
             //실제 새 파일 로직을 입력해야함
         }
 
@@ -54,6 +55,21 @@ namespace MainMenuApp
             {
                 contextMenuStrip1.Show(e.Location);
             }
+        }
+
+        private void textBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            LblMouseLocation.Text = $"X좌표 : {e.X.ToString()}, Y좌표 : {e.Y.ToString()}";
+        }
+
+        private void Form1_Activated(object sender, EventArgs e)
+        {
+            button1.Focus();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            MnuNewFile_Click(sender, e);
         }
     }
 }
