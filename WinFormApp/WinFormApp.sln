@@ -35,6 +35,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimationApp", "AnimationAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphicApp", "GraphicApp\GraphicApp.csproj", "{588A64D6-1536-43EE-A389-D34A01E600A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChartControlApp", "ChartControlApp\ChartControlApp.csproj", "{0471BD7C-FDD8-43F4-A81B-436D68BF28EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookRentalShop20", "BookRentalShop20\BookRentalShop20.csproj", "{AE99EDEB-C456-4557-A3DF-7FC37C0F9432}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +109,14 @@ Global
 		{588A64D6-1536-43EE-A389-D34A01E600A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{588A64D6-1536-43EE-A389-D34A01E600A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{588A64D6-1536-43EE-A389-D34A01E600A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0471BD7C-FDD8-43F4-A81B-436D68BF28EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0471BD7C-FDD8-43F4-A81B-436D68BF28EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0471BD7C-FDD8-43F4-A81B-436D68BF28EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0471BD7C-FDD8-43F4-A81B-436D68BF28EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE99EDEB-C456-4557-A3DF-7FC37C0F9432}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE99EDEB-C456-4557-A3DF-7FC37C0F9432}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE99EDEB-C456-4557-A3DF-7FC37C0F9432}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE99EDEB-C456-4557-A3DF-7FC37C0F9432}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
