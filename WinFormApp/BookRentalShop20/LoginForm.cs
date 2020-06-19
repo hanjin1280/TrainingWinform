@@ -72,30 +72,50 @@ namespace BookRentalShop20
 
             string strUserId = string.Empty;
 
-            using (SqlConnection conn = new SqlConnection(strConnString))
+            try
             {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = conn;
-                cmd.CommandText = "SELECT userID FROM userTbl" 
-                                + " WHERE userID = @userID"
-                                  + " AND password = @password";
-                
-                // DB 해킹(SQL Injection)을 방지하기 위해 변수를 사용하여 접속
-                SqlParameter parmUserID = new SqlParameter("@userID", SqlDbType.VarChar, 12);
-                parmUserID.Value = TxtUserID.Text;
-                cmd.Parameters.Add(parmUserID);
+                using (SqlConnection conn = new SqlConnection(strConnString))
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand();
+                    cmd.Connection = conn;
+                    cmd.CommandText = "SELECT userID FROM userTbl"
+                                    + " WHERE userID = @userID"
+                                      + " AND password = @password";
 
-                SqlParameter parmPassword = new SqlParameter("@password", SqlDbType.VarChar, 20);
-                parmPassword.Value = TxtPassWord.Text;
-                cmd.Parameters.Add(parmPassword);
+                    // DB 해킹(SQL Injection)을 방지하기 위해 변수를 사용하여 접속
+                    SqlParameter parmUserID = new SqlParameter("@userID", SqlDbType.VarChar, 12);
+                    parmUserID.Value = TxtUserID.Text;
+                    cmd.Parameters.Add(parmUserID);
 
-                SqlDataReader reader = cmd.ExecuteReader();
-                reader.Read();
-                strUserId = reader["userID"].ToString();
-                MetroMessageBox.Show(this, "접속성공", "로그인");
-                Debug.WriteLine("On the Debug");
+                    SqlParameter parmPassword = new SqlParameter("@password", SqlDbType.VarChar, 20);
+                    parmPassword.Value = TxtPassWord.Text;
+                    cmd.Parameters.Add(parmPassword);
+
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    reader.Read();
+                    strUserId = reader["userID"] != null ? reader["userID"].ToString() : "";
+
+                    if (strUserId != "")
+                    {
+                        MetroMessageBox.Show(this, "접속성공", "로그인성공");
+                        this.Close();
+                    }
+                    else
+                    {
+                        MetroMessageBox.Show(this, "접속실패", "로그인실패", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    }
+
+                    //Debug.WriteLine("On the Debug");
+                }
             }
+            catch (Exception ex)
+            {
+                MetroMessageBox.Show(this, $"Error : {ex.StackTrace}", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            
         }
     }
 }
