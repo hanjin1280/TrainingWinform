@@ -59,7 +59,7 @@ namespace BookRentalShop20
                 
                 TxtNames.Text = data.Cells[4].Value.ToString();
 
-                DtpReleaseDate.CustomFormat = "yyyy-mm-dd";
+                DtpReleaseDate.CustomFormat = "yyyy-MM-dd";
                 DtpReleaseDate.Format = DateTimePickerFormat.Custom;
                 DtpReleaseDate.Value = DateTime.Parse(data.Cells[5].Value.ToString());
                 TxtISBN.Text = data.Cells[6].Value.ToString();
@@ -222,7 +222,7 @@ namespace BookRentalShop20
 
         private void MemberForm_Load(object sender, EventArgs e)
         {
-            DtpReleaseDate.CustomFormat = "yyyy-mm-dd";//
+            DtpReleaseDate.CustomFormat = "yyyy-MM-dd";//
             DtpReleaseDate.Format = DateTimePickerFormat.Custom;
             UpdateData(); // 데이터그리드 DB 데이터 로딩하기
             UpdateCboDivision();
@@ -254,7 +254,7 @@ namespace BookRentalShop20
 
         private void DtpReleaseDate_ValueChanged(object sender, EventArgs e)
         {
-            DtpReleaseDate.CustomFormat = "yyyy-mm-dd";
+            DtpReleaseDate.CustomFormat = "yyyy-MM-dd";
             DtpReleaseDate.Format = DateTimePickerFormat.Custom;
         }
     }
