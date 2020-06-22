@@ -1,17 +1,9 @@
 ﻿using MetroFramework.Forms;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using MetroFramework.Forms;
 using MetroFramework;
 using System.Data.SqlClient;
-using System.Diagnostics;
 
 namespace BookRentalShop20
 {
@@ -97,6 +89,7 @@ namespace BookRentalShop20
 
                     if (strUserId != "")
                     {
+                        Commons.LOGINUSERID = strUserId;
                         MetroMessageBox.Show(this, "접속성공", "로그인성공");
                         this.Close();
                     }
