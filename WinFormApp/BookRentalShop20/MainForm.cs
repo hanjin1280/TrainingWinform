@@ -60,5 +60,11 @@ namespace BookRentalShop20
             UserForm form = new UserForm();
             InitChildForm(form, "사용자 관리");
         }
+
+        private void 회원관리MToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MemberForm form = new MemberForm();
+            InitChildForm(form, "회원관리");
+        }
     }
 }

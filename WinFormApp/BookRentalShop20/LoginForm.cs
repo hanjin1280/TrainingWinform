@@ -17,7 +17,6 @@ namespace BookRentalShop20
 {
     public partial class LoginForm : MetroForm
     {
-        string strConnString = "Data Source=192.168.0.10;Initial Catalog=BookRentalshopDB;Persist Security Info=True;User ID=sa;Password=p@ssw0rd!";
 
         public LoginForm()
         {
@@ -74,7 +73,7 @@ namespace BookRentalShop20
 
             try
             {
-                using (SqlConnection conn = new SqlConnection(strConnString))
+                using (SqlConnection conn = new SqlConnection(Commons.CONNSTRING))
                 {
                     conn.Open();
                     SqlCommand cmd = new SqlCommand();

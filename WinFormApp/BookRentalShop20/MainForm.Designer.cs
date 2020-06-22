@@ -32,6 +32,7 @@
             this.MnuMain = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuItemDivMng = new System.Windows.Forms.ToolStripMenuItem();
             this.사용자관리UToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.회원관리MToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +51,8 @@
             // 
             this.MnuMain.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MnuItemDivMng,
-            this.사용자관리UToolStripMenuItem});
+            this.사용자관리UToolStripMenuItem,
+            this.회원관리MToolStripMenuItem});
             this.MnuMain.Name = "MnuMain";
             this.MnuMain.Size = new System.Drawing.Size(107, 24);
             this.MnuMain.Text = "메인관리(&M)";
@@ -68,6 +70,13 @@
             this.사용자관리UToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.사용자관리UToolStripMenuItem.Text = "사용자관리(&U)";
             this.사용자관리UToolStripMenuItem.Click += new System.EventHandler(this.사용자관리UToolStripMenuItem_Click);
+            // 
+            // 회원관리MToolStripMenuItem
+            // 
+            this.회원관리MToolStripMenuItem.Name = "회원관리MToolStripMenuItem";
+            this.회원관리MToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.회원관리MToolStripMenuItem.Text = "회원관리(&M)";
+            this.회원관리MToolStripMenuItem.Click += new System.EventHandler(this.회원관리MToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -96,6 +105,7 @@
         private System.Windows.Forms.ToolStripMenuItem MnuMain;
         private System.Windows.Forms.ToolStripMenuItem MnuItemDivMng;
         private System.Windows.Forms.ToolStripMenuItem 사용자관리UToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 회원관리MToolStripMenuItem;
     }
 }
 
