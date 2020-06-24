@@ -28,6 +28,10 @@ namespace BikeShop
         private void Page_Loaded(object sender, RoutedEventArgs e)
         { 
             Init();
+
+            ChildClass c = new ChildClass();
+            BaseClass b = new ChildClass();
+            
         }
 
         private void Init()

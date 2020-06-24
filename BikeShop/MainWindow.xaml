@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" MinWidth="530" MinHeight="320">
     <Grid>
-        <Frame x:Name="MainFrame" Source="TestPage.xaml" NavigationUIVisibility="Visible"/>
+        <Frame x:Name="MainFrame" Source="Menu.xaml" NavigationUIVisibility="Visible"/>
 
     </Grid>
 </Window>
