@@ -31,28 +31,23 @@ namespace BookRentalShop20
                 conn.Open(); // DB 열기
                 //string strQuery = "SELECT Idx, Author, Division, Names, ReleaseDate, ISBN, Price "
                 //                 + " FROM bookstbl ";
-                string strQuery = "SELECT r.idx AS '대여번호', m.Names AS '대여회원', r.memberIdx, "
-                                      + " t.Names AS '장르', "
-                                      + " b.Names AS '대여책제목', r.bookIdx, b.ISBN, "
-                                      + " r.rentalDate AS '대여일' , r.returnDate AS '반납일' "
-                                      + " FROM rentaltbl AS r "
-                                      + " INNER JOIN membertbl AS m "
-                                              + " ON r.memberIdx = m.Idx "
-                                      + " INNER JOIN bookstbl AS b "
-                                              + " ON r.bookIdx = b.Idx "
-                                      + " INNER JOIN divtbl AS t "
-                                              + " ON b.division = t.division";
+                string strQuery = "SELECT r.idx AS '대여번호', m.Names AS '대여회원', "
+		                              + " t.Names AS '장르', "
+	                                  + " b.Names AS '대여책제목'  ,b.ISBN, "
+                                      + " r.rentalDate AS '대여일' , r.returnDate AS '반납일'"
+                                 + " FROM rentaltbl AS r "
+                                + " INNER JOIN membertbl AS m "
+                                   + " ON r.memberIdx = m.Idx "
+                                + " INNER JOIN bookstbl AS b "
+                                   + " ON r.bookIdx = b.Idx "
+                                + " INNER JOIN divtbl AS t "
+                                  + " ON b.division = t.division";
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(strQuery, conn);
                 DataSet ds = new DataSet();
                 dataAdapter.Fill(ds, "rentaltbl");
 
-                GrdBooksTbl.DataSource = ds;
-                GrdBooksTbl.DataMember = "rentaltbl";
-
-                DataGridViewColumn column = GrdBooksTbl.Columns[2];
-                column.Visible = false;// Division 비활성화를 통한 화면에 안보이게 하기.
-                column = GrdBooksTbl.Columns[5];
-                column.Visible = false;// Division 비활성화를 통한 화면에 안보이게 하기.
+                GrdRentalTbl.DataSource = ds;
+                GrdRentalTbl.DataMember = "rentaltbl";
             }
         }
 
@@ -61,16 +56,17 @@ namespace BookRentalShop20
         {
             if(e.RowIndex > -1)
             {
-                DataGridViewRow data = GrdBooksTbl.Rows[e.RowIndex];
+                DataGridViewRow data = GrdRentalTbl.Rows[e.RowIndex];
                 TxtIdx.Text = data.Cells[0].Value.ToString();
                 TxtIdx.ReadOnly = true;
                 CboMemberIdx.SelectedIndex = CboMemberIdx.FindString(data.Cells[1].Value.ToString());
-                CboBookIdx.SelectedIndex = CboBookIdx.FindString(data.Cells[4].Value.ToString());
+                CboBookIdx.SelectedIndex = CboBookIdx.FindString(data.Cells[3].Value.ToString());
 
                 DtpRentalDate.CustomFormat = "yyyy-MM-dd";
                 DtpRentalDate.Format = DateTimePickerFormat.Custom;
-                DtpRentalDate.Value = DateTime.Parse(data.Cells[7].Value.ToString());
-                if(string.IsNullOrEmpty(data.Cells[8].Value.ToString()))
+                DtpRentalDate.Value = DateTime.Parse(data.Cells[5].Value.ToString());
+
+                if(string.IsNullOrEmpty(data.Cells[6].Value.ToString()))
                 {
                     DtpReturnDate.CustomFormat = " ";//  공백이 한칸 들어가야함
                     DtpReturnDate.Format = DateTimePickerFormat.Custom;
@@ -79,7 +75,7 @@ namespace BookRentalShop20
                 {
                     DtpReturnDate.CustomFormat = "yyyy-MM-dd";
                     DtpReturnDate.Format = DateTimePickerFormat.Custom;
-                    DtpReturnDate.Value = DateTime.Parse(data.Cells[8].Value.ToString());
+                    DtpReturnDate.Value = DateTime.Parse(data.Cells[6].Value.ToString());
                 }
                 mode = "UPDATE"; // 수정은 UPDATE
             }
