@@ -77,5 +77,11 @@ namespace BookRentalShop20
             BooksForm form = new BooksForm();
             InitChildForm(form, "책 관리");
         }
+
+        private void 대여책관리RToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RentalForm form = new RentalForm();
+            InitChildForm(form, "대여책 관리");
+        }
     }
 }

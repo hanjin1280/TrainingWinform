@@ -252,7 +252,7 @@ namespace BookRentalShop20
             }
         }
 
-        private void DtpReleaseDate_ValueChanged(object sender, EventArgs e)
+         private void DtpReleaseDate_ValueChanged(object sender, EventArgs e)
         {
             DtpReleaseDate.CustomFormat = "yyyy-MM-dd";
             DtpReleaseDate.Format = DateTimePickerFormat.Custom;
